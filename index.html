@@ -1,0 +1,1329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <title>Transport Logistic - Reliable Freight, Delivered On Route</title>
+    <meta
+      name="description"
+      content="Transport Logistic moves cargo by road, sea and air with real-time tracking and a 99% on-time delivery record. Get a free freight quote today."
+    />
+    <meta
+      property="og:title"
+      content="Transport Logistic - Reliable Freight, Delivered On Route"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Road, sea and air freight with real-time tracking and a 99% on-time delivery record."
+    />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                950: "#081a33",
+                900: "#0d2547",
+                800: "#14315e",
+                700: "#1c4079",
+              },
+              orange: {
+                600: "#e85a0c",
+                500: "#f2660f",
+                400: "#ff9152",
+                100: "#ffe4d1",
+              },
+              inkgray: {
+                50: "#f6f7f9",
+                100: "#eef0f3",
+                200: "#e2e5eb",
+                500: "#6b7280",
+                900: "#14171c",
+              },
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="font-body bg-white text-inkgray-900">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div id="scroll-progress"></div>
+
+    <!-- ============ PAGE LOADER ============ -->
+    <div
+      id="page-loader"
+      class="bg-navy-gradient"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="loader-badge">
+        <span class="loader-badge-icon"
+          ><i class="fa-solid fa-truck-fast" aria-hidden="true"></i
+        ></span>
+        Transport<span class="text-orange-400">Logistic</span>
+      </div>
+      <div class="loader-progress">
+        <i class="fa-solid fa-truck-fast loader-truck" aria-hidden="true"></i>
+        <div class="loader-track"><div class="loader-fill"></div></div>
+      </div>
+      <span class="sr-only">Loading Transport Logistic…</span>
+    </div>
+
+    <!-- ============ ANNOUNCEMENT BAR ============ -->
+    <div id="announce-bar" class="bg-navy-950 text-white/80 text-sm">
+      <div class="wrap flex items-center justify-between py-2 gap-4">
+        <div class="hidden md:flex items-center gap-6 whitespace-nowrap">
+          <a href="tel:+12345678900" class="hover:text-white transition-colors"
+            ><i class="fa-solid fa-phone mr-2 text-orange-400"></i>+1 (234) 567
+            890</a
+          >
+          <a
+            href="mailto:info@transportlogistic.com"
+            class="hover:text-white transition-colors"
+            ><i class="fa-solid fa-envelope mr-2 text-orange-400"></i
+            >info@transportlogistic.com</a
+          >
+          <span
+            ><i class="fa-solid fa-location-dot mr-2 text-orange-400"></i>6391
+            Elgin St, Celina, Delaware</span
+          >
+        </div>
+        <div class="flex-1 overflow-hidden md:hidden">
+          <div class="announce-track whitespace-nowrap">
+            <i class="fa-solid fa-truck-fast mr-2 text-orange-400"></i
+            >Delivering smarter logistics solutions &nbsp;•&nbsp; 99% on-time
+            delivery &nbsp;•&nbsp; Free quotes today
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          <span
+            ><i class="fa-regular fa-clock mr-2 text-orange-400"></i>Mon – Fri:
+            09:00 – 18:00</span
+          >
+          <div class="flex items-center gap-3 text-white/70">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:text-orange-400 transition-colors"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="X"
+              class="hover:text-orange-400 transition-colors"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="hover:text-orange-400 transition-colors"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ NAV ============ -->
+    <header id="site-nav" class="sticky top-0 z-50">
+      <nav
+        class="wrap flex items-center justify-between py-4"
+        aria-label="Primary"
+      >
+        <a
+          href="index.html"
+          class="font-display font-800 text-xl text-navy-950 flex items-center gap-2"
+        >
+          <span
+            class="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-sm"
+            ><i class="fa-solid fa-truck-fast"></i
+          ></span>
+          Transport<span class="text-orange-600">Logistic</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="./pages/about.html" class="nav-link">About</a>
+          <a href="./pages/services.html" class="nav-link">Services</a>
+          <a href="./pages/projects.html" class="nav-link">Projects</a>
+          <a href="./pages/pricing.html" class="nav-link">Pricing</a>
+          <a href="./pages/faq.html" class="nav-link">FAQ</a>
+          <a href="./pages/blog.html" class="nav-link">Blog</a>
+          <a href="./pages/contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="./pages/contact.html"
+            class="btn btn-primary hidden sm:inline-flex"
+            >Get a Quote
+            <span class="btn-arrow"
+              ><i class="fa-solid fa-arrow-right"></i></span
+          ></a>
+          <button
+            id="menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            class="lg:hidden w-11 h-11 rounded-full border border-inkgray-200 flex items-center justify-center"
+          >
+            <i id="icon-burger" class="fa-solid fa-bars"></i>
+            <i id="icon-close" class="fa-solid fa-xmark hidden"></i>
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="lg:hidden absolute left-0 right-0 bg-white border-b border-inkgray-100 shadow-xl px-6 py-6 flex flex-col gap-4"
+      >
+        <a href="index.html" class="mobile-link font-medium">Home</a>
+        <a href="./pages/about.html" class="mobile-link font-medium">About</a>
+        <a href="./pages/services.html" class="mobile-link font-medium"
+          >Services</a
+        >
+        <a href="./pages/projects.html" class="mobile-link font-medium"
+          >Projects</a
+        >
+        <a href="./pages/pricing.html" class="mobile-link font-medium"
+          >Pricing</a
+        >
+        <a href="./pages/faq.html" class="mobile-link font-medium">FAQ</a>
+        <a href="./pages/blog.html" class="mobile-link font-medium">Blog</a>
+        <a href="./pages/contact.html" class="mobile-link font-medium"
+          >Contact</a
+        >
+        <a
+          href="./pages/contact.html"
+          class="btn btn-primary justify-center mt-2"
+          >Get a Quote</a
+        >
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section
+        class="relative overflow-hidden bg-navy-gradient text-white hero-shell"
+      >
+        <div class="absolute inset-0" data-parallax>
+          <img
+            src="https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=2000&auto=format&fit=crop"
+            alt=""
+            class="w-full h-[125%] object-cover opacity-30"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/20"
+        ></div>
+        <div
+          class="glow-blob w-[36rem] h-[36rem] bg-orange-500/30 -top-40 -right-32"
+        ></div>
+        <div
+          class="glow-blob w-[24rem] h-[24rem] bg-navy-700/50 bottom-0 -left-20"
+        ></div>
+
+        <div
+          class="wrap hero-inner relative grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center"
+        >
+          <div>
+            <p
+              data-hero-item
+              class="opacity-0 translate-y-6 eyebrow left-only text-orange-400 mb-[clamp(0.5rem,2vh,1.25rem)]"
+            >
+              Delivering smarter logistics solutions
+            </p>
+            <h1
+              data-hero-item
+              class="opacity-0 translate-y-6 font-display font-800 text-fluid-hero mb-[clamp(0.6rem,2vh,1.5rem)]"
+            >
+              Reliable transport.<br />On time,
+              <span class="text-orange-400">every route.</span>
+            </h1>
+            <p
+              data-hero-item
+              class="opacity-0 translate-y-6 text-fluid-lg text-white/75 max-w-xl mb-[clamp(0.85rem,2.5vh,2.25rem)]"
+            >
+              We move freight by road, sea and air - fast, secure and fully
+              tracked from pickup to final mile, so your supply chain never has
+              to wait.
+            </p>
+            <div
+              data-hero-item
+              class="opacity-0 translate-y-6 flex flex-wrap items-center gap-5"
+            >
+              <a href="./pages/contact.html" class="btn btn-primary"
+                >Get a Free Quote
+                <span class="btn-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+              <a href="./pages/services.html" class="btn btn-ghost"
+                >Our Services</a
+              >
+            </div>
+            <div
+              data-hero-item
+              class="opacity-0 translate-y-6 flex items-center gap-4 mt-[clamp(0.75rem,2.5vh,2.5rem)]"
+            >
+              <div class="flex -space-x-3">
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-navy-950 object-cover"
+                  src="https://images.unsplash.com/photo-1631040222142-86d7f65bf822?q=80&w=100&auto=format&fit=crop"
+                  alt=""
+                  decoding="async"
+                />
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-navy-950 object-cover"
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=100&auto=format&fit=crop"
+                  alt=""
+                  decoding="async"
+                />
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-navy-950 object-cover"
+                  src="https://images.unsplash.com/photo-1624421998513-77a9ebb43d0d?q=80&w=100&auto=format&fit=crop"
+                  alt=""
+                  decoding="async"
+                />
+              </div>
+              <div class="text-sm">
+                <div class="flex items-center gap-1 text-orange-400">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-white/70">
+                  4.9 rating · 15,000+ satisfied customers
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden lg:block hero-visual">
+            <div class="hero-visual__image">
+              <img
+                src="https://images.unsplash.com/photo-1670121180530-cfcba4438038?q=80&w=1200&auto=format&fit=crop"
+                alt="Cargo ship loaded with containers at dock"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+
+            <div
+              class="hero-visual__card hero-visual__card--shipment card glass-dark text-white float-slow"
+            >
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 text-orange-400">
+                  <i class="fa-solid fa-route"></i
+                  ><span class="font-display font-700 text-sm"
+                    >Live Shipment</span
+                  >
+                </div>
+                <span class="hero-live-dot" title="Live tracking active"></span>
+              </div>
+              <p class="text-sm text-white/70">
+                Tracking <span class="text-white font-semibold">#MSK-4471</span>
+              </p>
+              <p class="text-xs text-white/50 mt-0.5">Rotterdam → Newark</p>
+              <div class="skill-bar mt-3">
+                <div class="skill-fill" style="width: 72%"></div>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <p class="text-xs text-white/50">72% en route</p>
+                <p class="text-xs text-white/50">ETA Aug 14</p>
+              </div>
+            </div>
+
+            <div
+              class="hero-visual__card hero-visual__card--rate card glass-dark text-white float-slower"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p
+                    class="font-display text-3xl font-800 text-orange-400"
+                    data-counter="99"
+                    data-suffix="%"
+                  >
+                    0%
+                  </p>
+                  <p class="text-sm text-white/70">On-time delivery</p>
+                </div>
+                <span class="hero-trend"
+                  ><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i
+                  >2.4%</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="hero-visual__card hero-visual__card--support card glass-dark text-white float-slow"
+              style="animation-delay: -3s"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="hero-live-dot hero-live-dot--sm"
+                  title="Support online"
+                ></span>
+                <div>
+                  <p class="text-sm font-semibold">24/7 live support</p>
+                  <p class="text-xs text-white/50">Avg. response 42 sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT TEASER ============ -->
+      <section class="py-24 md:py-32 overflow-hidden">
+        <div class="wrap grid lg:grid-cols-2 gap-16 items-center">
+          <div data-reveal="left">
+            <span class="eyebrow left-only mb-5">About Transport Logistic</span>
+            <h2
+              class="font-display font-800 text-fluid-h1 text-navy-950 mt-4 mb-6"
+            >
+              Driven by expertise,<br />built for
+              <span class="text-orange-600">logistics</span>.
+            </h2>
+            <p class="text-fluid-body text-inkgray-500 mb-8 max-w-lg">
+              For over a decade we've streamlined supply chains for
+              manufacturers, retailers and freight forwarders - connecting first
+              mile to final destination with route intelligence, not guesswork.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-6 mb-9">
+              <div class="flex gap-4">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center shrink-0"
+                >
+                  <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div>
+                  <p class="font-display font-700 text-navy-950">
+                    Worldwide network
+                  </p>
+                  <p class="text-sm text-inkgray-500">
+                    250+ branches across 40 countries you can count on.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center shrink-0"
+                >
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                  <p class="font-display font-700 text-navy-950">
+                    24/7 live support
+                  </p>
+                  <p class="text-sm text-inkgray-500">
+                    A dispatch team on call around the clock, every day.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="./pages/about.html" class="btn btn-outline"
+              >Read Our Story
+              <span class="btn-arrow"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+
+          <div class="relative h-[26rem] md:h-[32rem]" data-reveal="right">
+            <img
+              src="https://images.unsplash.com/photo-1738115085892-656c8d476981?q=80&w=1200&auto=format&fit=crop"
+              alt="Cargo jet on the runway at golden hour"
+              loading="lazy"
+              decoding="async"
+              class="absolute top-0 left-0 w-2/3 h-3/5 object-cover rounded-3xl shadow-xl"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1620388640785-892616248ec8?q=80&w=1000&auto=format&fit=crop"
+              alt="Forklift operator moving pallets in a warehouse"
+              loading="lazy"
+              decoding="async"
+              class="absolute bottom-0 right-0 w-3/4 h-3/5 object-cover rounded-3xl shadow-xl border-4 border-white"
+            />
+            <div
+              class="card gradient-border absolute top-1/3 right-0 bg-white p-4 w-44 float-slow"
+            >
+              <p class="font-display font-800 text-2xl text-navy-950">
+                <span data-counter="42">0</span>+
+              </p>
+              <p class="text-xs text-inkgray-500">
+                Years combined team experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHY CHOOSE US ============ -->
+      <section class="py-24 md:py-32 bg-inkgray-50">
+        <div class="wrap">
+          <div class="max-w-2xl mx-auto text-center mb-16" data-reveal="up">
+            <span class="eyebrow justify-center mb-5">Why choose us</span>
+            <h2 class="font-display font-800 text-fluid-h1 text-navy-950 mt-4">
+              Freight handled with precision, start to finish.
+            </h2>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card p-8" data-reveal="up" data-stagger>
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-route"></i>
+              </div>
+              <h3 class="font-display font-700 text-lg text-navy-950 mb-2">
+                Real-time tracking
+              </h3>
+              <p class="text-sm text-inkgray-500">
+                Follow every shipment live, from origin to final signature.
+              </p>
+            </div>
+            <div class="card p-8" data-reveal="up" data-stagger>
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="font-display font-700 text-lg text-navy-950 mb-2">
+                Insured & secure
+              </h3>
+              <p class="text-sm text-inkgray-500">
+                Every load covered end-to-end, with full chain-of-custody.
+              </p>
+            </div>
+            <div class="card p-8" data-reveal="up" data-stagger>
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <h3 class="font-display font-700 text-lg text-navy-950 mb-2">
+                Fast turnaround
+              </h3>
+              <p class="text-sm text-inkgray-500">
+                Optimized routing gets freight moving within hours, not days.
+              </p>
+            </div>
+            <div class="card p-8" data-reveal="up" data-stagger>
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+              <h3 class="font-display font-700 text-lg text-navy-950 mb-2">
+                Transparent pricing
+              </h3>
+              <p class="text-sm text-inkgray-500">
+                Flat, upfront quotes - no fuel surcharges buried in fine print.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CORE SERVICES ============ -->
+      <section class="py-24 md:py-32">
+        <div class="wrap">
+          <div class="flex flex-wrap justify-between items-end gap-6 mb-14">
+            <div data-reveal="up">
+              <span class="eyebrow left-only mb-5">Our services</span>
+              <h2
+                class="font-display font-800 text-fluid-h1 text-navy-950 mt-4 max-w-xl"
+              >
+                Efficient logistics solutions for every mile.
+              </h2>
+            </div>
+            <a
+              href="./pages/services.html"
+              class="btn btn-outline shrink-0"
+              data-reveal="up"
+              >View All Services
+              <span class="btn-arrow"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article
+              class="card gradient-border overflow-hidden group"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-48">
+                <img
+                  src="https://images.unsplash.com/photo-1596455671092-d7e08c435509?q=80&w=800&auto=format&fit=crop"
+                  alt="Freight truck hauling cargo on the highway"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mb-4"
+                >
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+                <h3 class="font-display font-700 text-navy-950 mb-2">
+                  Road Freight
+                </h3>
+                <p class="text-sm text-inkgray-500 mb-4">
+                  Reliable, cost-effective trucking across cities and regions.
+                </p>
+                <a
+                  href="./pages/services.html"
+                  class="text-sm font-semibold text-orange-600"
+                  >Learn more <i class="fa-solid fa-arrow-right ml-1"></i
+                ></a>
+              </div>
+            </article>
+            <article
+              class="card gradient-border overflow-hidden group"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-48">
+                <img
+                  src="https://images.unsplash.com/photo-1670121180530-cfcba4438038?q=80&w=800&auto=format&fit=crop"
+                  alt="Container ship at dock ready for ocean freight"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mb-4"
+                >
+                  <i class="fa-solid fa-ship"></i>
+                </div>
+                <h3 class="font-display font-700 text-navy-950 mb-2">
+                  Ocean Freight
+                </h3>
+                <p class="text-sm text-inkgray-500 mb-4">
+                  Full and part-container shipping with customs handled.
+                </p>
+                <a
+                  href="./pages/services.html"
+                  class="text-sm font-semibold text-orange-600"
+                  >Learn more <i class="fa-solid fa-arrow-right ml-1"></i
+                ></a>
+              </div>
+            </article>
+            <article
+              class="card gradient-border overflow-hidden group"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-48">
+                <img
+                  src="https://images.unsplash.com/photo-1738115085892-656c8d476981?q=80&w=800&auto=format&fit=crop"
+                  alt="Cargo aircraft on airport tarmac for air freight"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mb-4"
+                >
+                  <i class="fa-solid fa-plane"></i>
+                </div>
+                <h3 class="font-display font-700 text-navy-950 mb-2">
+                  Air Freight
+                </h3>
+                <p class="text-sm text-inkgray-500 mb-4">
+                  Priority air cargo for time-critical, high-value shipments.
+                </p>
+                <a
+                  href="./pages/services.html"
+                  class="text-sm font-semibold text-orange-600"
+                  >Learn more <i class="fa-solid fa-arrow-right ml-1"></i
+                ></a>
+              </div>
+            </article>
+            <article
+              class="card gradient-border overflow-hidden group"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-48">
+                <img
+                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop"
+                  alt="Modern warehouse for storage and distribution"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mb-4"
+                >
+                  <i class="fa-solid fa-warehouse"></i>
+                </div>
+                <h3 class="font-display font-700 text-navy-950 mb-2">
+                  Warehousing
+                </h3>
+                <p class="text-sm text-inkgray-500 mb-4">
+                  Secure storage and pick-pack fulfillment on demand.
+                </p>
+                <a
+                  href="./pages/services.html"
+                  class="text-sm font-semibold text-orange-600"
+                  >Learn more <i class="fa-solid fa-arrow-right ml-1"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATS ============ -->
+      <section
+        class="py-20 bg-navy-gradient text-white relative overflow-hidden"
+      >
+        <div class="glow-blob w-96 h-96 bg-orange-500/20 top-0 left-1/4"></div>
+        <div class="wrap grid grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          <div class="text-center" data-reveal="up" data-stagger>
+            <p class="font-display font-800 text-fluid-h1 text-orange-400">
+              <span data-counter="250" data-suffix="+">0</span>
+            </p>
+            <p class="text-white/70 text-sm mt-2">Worldwide branches</p>
+          </div>
+          <div class="text-center" data-reveal="up" data-stagger>
+            <p class="font-display font-800 text-fluid-h1 text-orange-400">
+              <span data-counter="1" data-suffix="M+">0</span>
+            </p>
+            <p class="text-white/70 text-sm mt-2">Shipments delivered</p>
+          </div>
+          <div class="text-center" data-reveal="up" data-stagger>
+            <p class="font-display font-800 text-fluid-h1 text-orange-400">
+              <span data-counter="2.5" data-decimals="1" data-suffix="K+"
+                >0</span
+              >
+            </p>
+            <p class="text-white/70 text-sm mt-2">Satisfied customers</p>
+          </div>
+          <div class="text-center" data-reveal="up" data-stagger>
+            <p class="font-display font-800 text-fluid-h1 text-orange-400">
+              <span data-counter="99" data-suffix="%">0</span>
+            </p>
+            <p class="text-white/70 text-sm mt-2">Successful delivery rate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURED PROJECTS TEASER ============ -->
+      <section class="py-24 md:py-32">
+        <div class="wrap">
+          <div class="flex flex-wrap justify-between items-end gap-6 mb-14">
+            <div data-reveal="up">
+              <span class="eyebrow left-only mb-5">Case studies</span>
+              <h2
+                class="font-display font-800 text-fluid-h1 text-navy-950 mt-4 max-w-xl"
+              >
+                Explore our latest logistics projects.
+              </h2>
+            </div>
+            <a
+              href="./pages/projects.html"
+              class="btn btn-primary shrink-0"
+              data-reveal="up"
+              >View All Projects
+              <span class="btn-arrow"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a
+              href="./pages/projects.html"
+              class="card overflow-hidden group relative"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-64">
+                <img
+                  src="https://images.unsplash.com/photo-1741107787743-2ea4e366a881?q=80&w=800&auto=format&fit=crop"
+                  alt="Fleet expansion for a regional air cargo carrier"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <span
+                class="absolute top-4 left-4 text-white font-display font-800 text-2xl drop-shadow"
+                >01</span
+              >
+              <div class="p-5">
+                <p class="font-display font-700 text-navy-950">
+                  Air Fleet Expansion
+                </p>
+                <p class="text-xs text-inkgray-500 mt-1">Air Freight</p>
+              </div>
+            </a>
+            <a
+              href="./pages/projects.html"
+              class="card overflow-hidden group relative"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-64">
+                <img
+                  src="https://images.unsplash.com/photo-1626186032295-5c0d509bbad8?q=80&w=800&auto=format&fit=crop"
+                  alt="Port terminal automation upgrade project"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <span
+                class="absolute top-4 left-4 text-white font-display font-800 text-2xl drop-shadow"
+                >02</span
+              >
+              <div class="p-5">
+                <p class="font-display font-700 text-navy-950">
+                  Port Terminal Upgrade
+                </p>
+                <p class="text-xs text-inkgray-500 mt-1">Ocean Freight</p>
+              </div>
+            </a>
+            <a
+              href="./pages/projects.html"
+              class="card overflow-hidden group relative"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-64">
+                <img
+                  src="https://images.unsplash.com/photo-1618317497044-cf78ada06f92?q=80&w=800&auto=format&fit=crop"
+                  alt="Container yard efficiency rollout across five ports"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <span
+                class="absolute top-4 left-4 text-white font-display font-800 text-2xl drop-shadow"
+                >03</span
+              >
+              <div class="p-5">
+                <p class="font-display font-700 text-navy-950">
+                  5-Port Yard Rollout
+                </p>
+                <p class="text-xs text-inkgray-500 mt-1">Container Logistics</p>
+              </div>
+            </a>
+            <a
+              href="./pages/projects.html"
+              class="card overflow-hidden group relative"
+              data-reveal="up"
+              data-stagger
+            >
+              <div class="card-media h-64">
+                <img
+                  src="https://images.unsplash.com/photo-1492168732976-2676c584c675?q=80&w=800&auto=format&fit=crop"
+                  alt="Fleet of freight trucks staged in a distribution yard"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <span
+                class="absolute top-4 left-4 text-white font-display font-800 text-2xl drop-shadow"
+                >04</span
+              >
+              <div class="p-5">
+                <p class="font-display font-700 text-navy-950">
+                  National Fleet Rollout
+                </p>
+                <p class="text-xs text-inkgray-500 mt-1">Road Freight</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS TIMELINE (route-line signature) ============ -->
+      <section class="py-24 md:py-32 bg-inkgray-50 overflow-hidden">
+        <div class="wrap">
+          <div class="max-w-2xl mx-auto text-center mb-16" data-reveal="up">
+            <span class="eyebrow justify-center mb-5">Working process</span>
+            <h2 class="font-display font-800 text-fluid-h1 text-navy-950 mt-4">
+              A process built to move with your business.
+            </h2>
+          </div>
+
+          <div class="relative">
+            <svg
+              class="route-divider hidden lg:block absolute top-8 left-0"
+              viewBox="0 0 1200 40"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <path
+                class="route-line-path"
+                d="M40,20 C 300,20 300,20 600,20 C 900,20 900,20 1160,20"
+                fill="none"
+                stroke="#f2660f"
+                stroke-width="2"
+              />
+              <circle data-route-node r="7" fill="#f2660f" class="route-node">
+                <title>Route progress</title>
+              </circle>
+            </svg>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+              <div class="text-center" data-reveal="up" data-stagger>
+                <div
+                  class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mx-auto mb-5 shadow-lg shadow-orange-500/30"
+                >
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+                <p class="font-display font-700 text-navy-950 mb-1">
+                  01 - Consultation
+                </p>
+                <p class="text-sm text-inkgray-500">
+                  A discovery call to map your lanes, volumes and goals.
+                </p>
+              </div>
+              <div class="text-center" data-reveal="up" data-stagger>
+                <div
+                  class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mx-auto mb-5 shadow-lg shadow-orange-500/30"
+                >
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <p class="font-display font-700 text-navy-950 mb-1">
+                  02 - Inventory
+                </p>
+                <p class="text-sm text-inkgray-500">
+                  Stock is optimized and staged for immediate dispatch.
+                </p>
+              </div>
+              <div class="text-center" data-reveal="up" data-stagger>
+                <div
+                  class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mx-auto mb-5 shadow-lg shadow-orange-500/30"
+                >
+                  <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <p class="font-display font-700 text-navy-950 mb-1">
+                  03 - Distribution
+                </p>
+                <p class="text-sm text-inkgray-500">
+                  Goods are packed and routed with precision timing.
+                </p>
+              </div>
+              <div class="text-center" data-reveal="up" data-stagger>
+                <div
+                  class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center text-xl mx-auto mb-5 shadow-lg shadow-orange-500/30"
+                >
+                  <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <p class="font-display font-700 text-navy-950 mb-1">
+                  04 - Delivery
+                </p>
+                <p class="text-sm text-inkgray-500">
+                  Real-time tracking through to final signature.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section
+        class="py-24 md:py-32 bg-navy-gradient text-white relative overflow-hidden"
+      >
+        <div
+          class="glow-blob w-96 h-96 bg-orange-500/20 -bottom-20 right-0"
+        ></div>
+        <div
+          class="wrap grid lg:grid-cols-[0.9fr_1.1fr] gap-14 items-center relative"
+          data-testi-wrap
+        >
+          <div data-reveal="left">
+            <span class="eyebrow left-only mb-5">Client feedback</span>
+            <h2 class="font-display font-800 text-fluid-h1 mt-4 mb-6">
+              What our clients say about Transport Logistic.
+            </h2>
+            <div class="flex items-center gap-3">
+              <button
+                data-testi-prev
+                aria-label="Previous testimonial"
+                class="w-11 h-11 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button
+                data-testi-next
+                aria-label="Next testimonial"
+                class="w-11 h-11 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <div class="flex gap-2 ml-3">
+                <button
+                  data-testi-dot
+                  class="w-2.5 h-2.5 rounded-full bg-orange-500"
+                  aria-label="Testimonial 1"
+                ></button>
+                <button
+                  data-testi-dot
+                  class="w-2.5 h-2.5 rounded-full bg-white/30"
+                  aria-label="Testimonial 2"
+                ></button>
+                <button
+                  data-testi-dot
+                  class="w-2.5 h-2.5 rounded-full bg-white/30"
+                  aria-label="Testimonial 3"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-hidden" data-reveal="right">
+            <div class="testi-track">
+              <div class="testi-slide">
+                <div class="glass-dark p-8 md:p-10 rounded-3xl">
+                  <div class="flex items-center gap-1 text-orange-400 mb-5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-fluid-lg text-white/90 mb-8">
+                    "Transport Logistic streamlined our entire supply chain.
+                    Deliveries land on schedule and their support team actually
+                    picks up the phone."
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=200&auto=format&fit=crop"
+                      class="w-12 h-12 rounded-full object-cover"
+                      alt="Adam Smith"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div>
+                      <p class="font-display font-700">Adam Smith</p>
+                      <p class="text-sm text-white/60">
+                        Senior Marketing Manager, Krempeng
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-slide">
+                <div class="glass-dark p-8 md:p-10 rounded-3xl">
+                  <div class="flex items-center gap-1 text-orange-400 mb-5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-fluid-lg text-white/90 mb-8">
+                    "Switching our ocean freight to Transport Logistic cut our
+                    customs delays in half. Visibility into every container gave
+                    our whole team peace of mind."
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop"
+                      class="w-12 h-12 rounded-full object-cover"
+                      alt="Carly Beitzel"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div>
+                      <p class="font-display font-700">Carly Beitzel</p>
+                      <p class="text-sm text-white/60">
+                        Operations Director, Nextware
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-slide">
+                <div class="glass-dark p-8 md:p-10 rounded-3xl">
+                  <div class="flex items-center gap-1 text-orange-400 mb-5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-fluid-lg text-white/90 mb-8">
+                    "Their warehousing team treats our inventory like it's their
+                    own. Pick-pack accuracy has been flawless for two years
+                    running."
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1770447616600-139515d59a39?q=80&w=200&auto=format&fit=crop"
+                      class="w-12 h-12 rounded-full object-cover"
+                      alt="Trent Felter"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div>
+                      <p class="font-display font-700">Trent Felter</p>
+                      <p class="text-sm text-white/60">
+                        Founder, Rising Agency
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NEWSLETTER ============ -->
+      <section class="py-20 bg-inkgray-50">
+        <div class="wrap">
+          <div
+            class="card p-10 md:p-14 bg-gradient-to-br from-navy-950 to-navy-800 text-white grid md:grid-cols-[1fr_auto] gap-8 items-center"
+            data-reveal="up"
+          >
+            <div>
+              <h2 class="font-display font-800 text-fluid-h2 mb-2">
+                Subscribe for the latest logistics updates.
+              </h2>
+              <p class="text-white/70">
+                Rate changes, network news and shipping tips - straight to your
+                inbox, once a month.
+              </p>
+            </div>
+            <form
+              data-validate-form
+              class="flex flex-col sm:flex-row gap-3 w-full md:w-auto"
+            >
+              <div class="flex-1">
+                <input
+                  data-required
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full px-5 py-3.5 rounded-full text-navy-950 border-2 border-transparent focus:border-orange-500 outline-none"
+                  aria-label="Email address"
+                />
+                <p class="field-error hidden text-orange-300 text-xs mt-1 ml-2">
+                  Enter a valid email address.
+                </p>
+              </div>
+              <button type="submit" class="btn btn-primary justify-center">
+                Subscribe
+                <span class="btn-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </button>
+            </form>
+            <p
+              class="field-success hidden md:col-span-2 text-orange-300 text-sm"
+              data-form-success
+            >
+              Thanks - you're subscribed!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-navy-950 text-white/70 pt-20 pb-8">
+      <div class="wrap grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div>
+          <a
+            href="index.html"
+            class="font-display font-800 text-xl text-white flex items-center gap-2 mb-4"
+          >
+            <span
+              class="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-sm"
+              ><i class="fa-solid fa-truck-fast"></i
+            ></span>
+            Transport<span class="text-orange-400">Logistic</span>
+          </a>
+          <p class="text-sm mb-5">
+            A dedicated logistics partner offering fast, secure and tailored
+            transport solutions to keep your business moving.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-facebook-f text-xs"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="X"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-x-twitter text-xs"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-instagram text-xs"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-linkedin-in text-xs"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <p class="font-display font-700 text-white mb-4">Quick Links</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a
+                href="./pages/about.html"
+                class="hover:text-orange-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/projects.html"
+                class="hover:text-orange-400 transition-colors"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/faq.html"
+                class="hover:text-orange-400 transition-colors"
+                >Help & FAQs</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/blog.html"
+                class="hover:text-orange-400 transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/contact.html"
+                class="hover:text-orange-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-display font-700 text-white mb-4">Our Services</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a
+                href="./pages/services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Ocean Freight</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Air Freight</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Road Freight</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Warehousing</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Local Truck Transport</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-display font-700 text-white mb-4">Official Info</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <i class="fa-solid fa-phone mr-2 text-orange-400"></i>+1 (234) 567
+              890
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope mr-2 text-orange-400"></i
+              >info@transportlogistic.com
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot mr-2 text-orange-400"></i>4517
+              Washington Ave, Manchester, KY
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="wrap border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50"
+      >
+        <p>
+          &copy; <span data-year></span> Transport Logistic. All rights
+          reserved.
+        </p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-orange-400 transition-colors"
+            >Terms & Conditions</a
+          >
+          <a href="#" class="hover:text-orange-400 transition-colors"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

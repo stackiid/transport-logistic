@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <title>Contact - Transport Logistic</title>
+    <meta
+      name="description"
+      content="Get a free freight quote from Transport Logistic. Call, email or send us your shipment details and we'll respond within one business hour."
+    />
+    <link rel="icon" href="../assets/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                950: "#081a33",
+                900: "#0d2547",
+                800: "#14315e",
+                700: "#1c4079",
+              },
+              orange: {
+                600: "#e85a0c",
+                500: "#f2660f",
+                400: "#ff9152",
+                100: "#ffe4d1",
+              },
+              inkgray: {
+                50: "#f6f7f9",
+                100: "#eef0f3",
+                200: "#e2e5eb",
+                500: "#6b7280",
+                900: "#14171c",
+              },
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="font-body bg-white text-inkgray-900">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div id="scroll-progress"></div>
+
+    <!-- ============ PAGE LOADER ============ -->
+    <div
+      id="page-loader"
+      class="bg-navy-gradient"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="loader-badge">
+        <span class="loader-badge-icon"
+          ><i class="fa-solid fa-truck-fast" aria-hidden="true"></i
+        ></span>
+        Transport<span class="text-orange-400">Logistic</span>
+      </div>
+      <div class="loader-progress">
+        <i class="fa-solid fa-truck-fast loader-truck" aria-hidden="true"></i>
+        <div class="loader-track"><div class="loader-fill"></div></div>
+      </div>
+      <span class="sr-only">Loading Transport Logistic…</span>
+    </div>
+
+    <div id="announce-bar" class="bg-navy-950 text-white/80 text-sm">
+      <div class="wrap flex items-center justify-between py-2 gap-4">
+        <div class="hidden md:flex items-center gap-6 whitespace-nowrap">
+          <a href="tel:+12345678900" class="hover:text-white transition-colors"
+            ><i class="fa-solid fa-phone mr-2 text-orange-400"></i>+1 (234) 567
+            890</a
+          >
+          <a
+            href="mailto:info@transportlogistic.com"
+            class="hover:text-white transition-colors"
+            ><i class="fa-solid fa-envelope mr-2 text-orange-400"></i
+            >info@transportlogistic.com</a
+          >
+          <span
+            ><i class="fa-solid fa-location-dot mr-2 text-orange-400"></i>6391
+            Elgin St, Celina, Delaware</span
+          >
+        </div>
+        <div class="flex-1 overflow-hidden md:hidden">
+          <div class="announce-track whitespace-nowrap">
+            <i class="fa-solid fa-truck-fast mr-2 text-orange-400"></i
+            >Delivering smarter logistics solutions &nbsp;•&nbsp; 99% on-time
+            delivery
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          <span
+            ><i class="fa-regular fa-clock mr-2 text-orange-400"></i>Mon – Fri:
+            09:00 – 18:00</span
+          >
+          <div class="flex items-center gap-3 text-white/70">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:text-orange-400 transition-colors"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="X"
+              class="hover:text-orange-400 transition-colors"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="hover:text-orange-400 transition-colors"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="site-nav" class="sticky top-0 z-50">
+      <nav
+        class="wrap flex items-center justify-between py-4"
+        aria-label="Primary"
+      >
+        <a
+          href="../index.html"
+          class="font-display font-800 text-xl text-navy-950 flex items-center gap-2"
+        >
+          <span
+            class="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-sm"
+            ><i class="fa-solid fa-truck-fast"></i
+          ></span>
+          Transport<span class="text-orange-600">Logistic</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="contact.html" class="btn btn-primary hidden sm:inline-flex"
+            >Get a Quote
+            <span class="btn-arrow"
+              ><i class="fa-solid fa-arrow-right"></i></span
+          ></a>
+          <button
+            id="menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            class="lg:hidden w-11 h-11 rounded-full border border-inkgray-200 flex items-center justify-center"
+          >
+            <i id="icon-burger" class="fa-solid fa-bars"></i
+            ><i id="icon-close" class="fa-solid fa-xmark hidden"></i>
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="lg:hidden absolute left-0 right-0 bg-white border-b border-inkgray-100 shadow-xl px-6 py-6 flex flex-col gap-4"
+      >
+        <a href="../index.html" class="mobile-link font-medium">Home</a>
+        <a href="about.html" class="mobile-link font-medium">About</a>
+        <a href="services.html" class="mobile-link font-medium">Services</a>
+        <a href="projects.html" class="mobile-link font-medium">Projects</a>
+        <a href="pricing.html" class="mobile-link font-medium">Pricing</a>
+        <a href="faq.html" class="mobile-link font-medium">FAQ</a>
+        <a href="blog.html" class="mobile-link font-medium">Blog</a>
+        <a href="contact.html" class="mobile-link font-medium">Contact</a>
+        <a href="contact.html" class="btn btn-primary justify-center mt-2"
+          >Get a Quote</a
+        >
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        class="relative bg-navy-gradient text-white py-20 overflow-hidden"
+      >
+        <div class="glow-blob w-80 h-80 bg-orange-500/30 top-0 right-10"></div>
+        <div class="wrap relative text-center">
+          <span class="eyebrow justify-center mb-5">Contact us</span>
+          <h1 class="font-display font-800 text-fluid-h1 mt-4">
+            Let's get your freight moving
+          </h1>
+          <p class="text-white/70 mt-4 max-w-xl mx-auto">
+            Tell us about your shipment and we'll respond with a quote within
+            one business hour.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-24 md:py-32">
+        <div class="wrap grid lg:grid-cols-3 gap-6 mb-16">
+          <div class="card p-8 text-center" data-reveal="up" data-stagger>
+            <div
+              class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl mx-auto mb-5"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3 class="font-display font-700 text-navy-950 mb-2">Call Us</h3>
+            <p class="text-sm text-inkgray-500 mb-1">
+              Mon – Fri, 09:00 – 18:00
+            </p>
+            <a href="tel:+12345678900" class="text-orange-600 font-semibold"
+              >+1 (234) 567 890</a
+            >
+          </div>
+          <div class="card p-8 text-center" data-reveal="up" data-stagger>
+            <div
+              class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl mx-auto mb-5"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3 class="font-display font-700 text-navy-950 mb-2">Email Us</h3>
+            <p class="text-sm text-inkgray-500 mb-1">
+              We reply within 1 business hour
+            </p>
+            <a
+              href="mailto:info@transportlogistic.com"
+              class="text-orange-600 font-semibold"
+              >info@transportlogistic.com</a
+            >
+          </div>
+          <div class="card p-8 text-center" data-reveal="up" data-stagger>
+            <div
+              class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl mx-auto mb-5"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3 class="font-display font-700 text-navy-950 mb-2">Visit Us</h3>
+            <p class="text-sm text-inkgray-500 mb-1">Head office</p>
+            <p class="text-orange-600 font-semibold">
+              4517 Washington Ave, Manchester, KY
+            </p>
+          </div>
+        </div>
+
+        <div class="wrap grid lg:grid-cols-2 gap-16 items-start">
+          <div data-reveal="left">
+            <span class="eyebrow left-only mb-5">Get a quote</span>
+            <h2
+              class="font-display font-800 text-fluid-h2 text-navy-950 mt-4 mb-6"
+            >
+              Send us your shipment details
+            </h2>
+            <form data-validate-form class="space-y-5">
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label
+                    class="text-sm font-semibold text-navy-950 mb-2 block"
+                    for="name"
+                    >Full Name</label
+                  >
+                  <input
+                    data-required
+                    id="name"
+                    type="text"
+                    class="w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none transition-colors"
+                    placeholder="Jane Doe"
+                  />
+                  <p class="field-error hidden text-red-500 text-xs mt-1">
+                    Please enter your name.
+                  </p>
+                </div>
+                <div>
+                  <label
+                    class="text-sm font-semibold text-navy-950 mb-2 block"
+                    for="email"
+                    >Email Address</label
+                  >
+                  <input
+                    data-required
+                    id="email"
+                    type="email"
+                    class="w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none transition-colors"
+                    placeholder="jane@company.com"
+                  />
+                  <p class="field-error hidden text-red-500 text-xs mt-1">
+                    Enter a valid email address.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <label
+                  class="text-sm font-semibold text-navy-950 mb-2 block"
+                  for="service"
+                  >Service Needed</label
+                >
+                <select
+                  id="service"
+                  class="w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none transition-colors bg-white"
+                >
+                  <option>Road Freight</option>
+                  <option>Ocean Freight</option>
+                  <option>Air Freight</option>
+                  <option>Warehousing</option>
+                  <option>Not Sure Yet</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  class="text-sm font-semibold text-navy-950 mb-2 block"
+                  for="message"
+                  >Shipment Details</label
+                >
+                <textarea
+                  data-required
+                  id="message"
+                  rows="5"
+                  class="w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none transition-colors resize-none"
+                  placeholder="Origin, destination, cargo type and estimated volume..."
+                ></textarea>
+                <p class="field-error hidden text-red-500 text-xs mt-1">
+                  Please share a few shipment details.
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-full sm:w-auto justify-center"
+              >
+                Send Message
+                <span class="btn-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </button>
+              <p
+                data-form-success
+                class="hidden text-green-600 text-sm font-medium"
+              >
+                <i class="fa-solid fa-circle-check mr-1"></i>Thanks - we'll be
+                in touch within one business hour.
+              </p>
+            </form>
+          </div>
+
+          <div
+            class="relative h-[26rem] lg:h-full min-h-[26rem]"
+            data-reveal="right"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1200&auto=format&fit=crop"
+              alt="Modern logistics warehouse facility"
+              class="w-full h-full object-cover rounded-3xl shadow-xl"
+              loading="lazy"
+              decoding="async"
+            />
+            <div
+              class="card gradient-border absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur p-5 flex items-center gap-4"
+            >
+              <div
+                class="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div>
+                <p class="font-display font-700 text-navy-950 text-sm">
+                  24/7 dispatch support
+                </p>
+                <p class="text-xs text-inkgray-500">
+                  Always a real person on the line.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy-950 text-white/70 pt-20 pb-8">
+      <div class="wrap grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div>
+          <a
+            href="../index.html"
+            class="font-display font-800 text-xl text-white flex items-center gap-2 mb-4"
+          >
+            <span
+              class="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-sm"
+              ><i class="fa-solid fa-truck-fast"></i
+            ></span>
+            Transport<span class="text-orange-400">Logistic</span>
+          </a>
+          <p class="text-sm mb-5">
+            A dedicated logistics partner offering fast, secure and tailored
+            transport solutions to keep your business moving.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-facebook-f text-xs"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="X"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-x-twitter text-xs"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-instagram text-xs"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors"
+              ><i class="fa-brands fa-linkedin-in text-xs"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <p class="font-display font-700 text-white mb-4">Quick Links</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a
+                href="about.html"
+                class="hover:text-orange-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="hover:text-orange-400 transition-colors"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="faq.html" class="hover:text-orange-400 transition-colors"
+                >Help & FAQs</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="hover:text-orange-400 transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="hover:text-orange-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-display font-700 text-white mb-4">Our Services</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a
+                href="services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Ocean Freight</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Air Freight</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Road Freight</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Warehousing</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="hover:text-orange-400 transition-colors"
+                >Local Truck Transport</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-display font-700 text-white mb-4">Official Info</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <i class="fa-solid fa-phone mr-2 text-orange-400"></i>+1 (234) 567
+              890
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope mr-2 text-orange-400"></i
+              >info@transportlogistic.com
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot mr-2 text-orange-400"></i>4517
+              Washington Ave, Manchester, KY
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="wrap border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50"
+      >
+        <p>
+          &copy; <span data-year></span> Transport Logistic. All rights
+          reserved.
+        </p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-orange-400 transition-colors"
+            >Terms & Conditions</a
+          ><a href="#" class="hover:text-orange-400 transition-colors"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
